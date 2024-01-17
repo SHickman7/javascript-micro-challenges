@@ -10,9 +10,12 @@
 //     should evaluate to 9
 
 
-function sum() {
-
+function sum(num1, num2) {
+  return num1 + num2;
 }
+
+console.log('Testing sum functionality:', sum(2,3));
+console.log('Testing another sum functionality:', sum(2,7));
 
 try {
   module.exports = sum;
