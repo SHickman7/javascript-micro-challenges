@@ -14,9 +14,29 @@
 //     should evaluate to "dolphinBoopBeepBoop"
 
 
-function smooshSomeStrings() {
-  
+//Notes:
+  //Looked up slice method
+  // https://www.geeksforgeeks.org/remove-elements-from-a-javascript-array/
+
+
+let array1 = ["ASDF", "BLAH", "Oh!", "Hi", "There!"];
+let num1 = 3;
+
+let array2 = ["Turtle", "dolphin", "Boop", "Beep", "Boop"]
+let num2 = 1
+
+
+function smooshSomeStrings(array, num){
+  let newArray = array.slice(num);
+  //console.log (newArray);
+
+  newArray = (newArray.join(''));
+  return newArray;
+
 }
+console.log(smooshSomeStrings (array1,num1));
+console.log(smooshSomeStrings(array2, num2))
+
 
 try {
   module.exports = smooshSomeStrings;
